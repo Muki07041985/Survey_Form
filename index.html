@@ -1,0 +1,99 @@
+
+<html lang="en">
+<head>
+
+  <style>
+
+    body {
+      font-family: sans-serif;
+      padding-left: 20%;
+      padding-right: 20%;
+      text-align:center;
+     }
+
+      label {
+        font-size: 18px;
+        display: block;
+        padding-bottom: 10px;
+      }
+
+    input, textarea, select {
+      display: center;
+      text-align: center;
+      width: 100%;
+    }
+
+     #radio-button-area {
+      float: center;
+      background-color: #a8dadc;
+      padding-bottom: 20px;
+     }
+
+
+
+
+    form {
+      background-color: #b5838d;
+      padding: 40px 40px 40px 40px;
+      text-align; center:
+    }
+
+    .radio-inline {
+      display: inline-block;
+    }
+
+
+
+
+  </style>
+  </head>
+  <body>
+ <h1 id="title">Tell Me About Meat</h1>
+ <p id="description">This is a survey where you can teach us about your meat preferences!!</p>
+ <form id="survey-form">
+  <label id="name-label">Name</label>:
+   <input type="text" name="name" id="name" placeholder="Enter your name"required><br>
+
+   <label id="email-label">Email</label>:
+    <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+
+   <label id="number-label">Number</label>:
+     <input type="number" name="number" id="number" min="0" max="10" placeholder="$" required><br>
+
+     <label id="diet-type-label">Nutrition Type:</label>
+     <select id="dropdown" name="Diet">
+       <option value="paleo">Paleo</option>
+       <option value="vegan">Vegan</option>
+       <option value="vegeterian">Vegeterian</option>
+       <option value="carnivore">Carnivore</option>
+     </select>
+
+     <label id="additional-comments-label">Additional Comments:</label><br>
+     <textarea placeholder="aditional comments"></textarea><br>
+
+     <br>
+      <div id="radio-button-area">
+        <label id="gender-label">Gender:</label>
+     <input type="radio" class="radio-inline" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" class="radio-inline" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" class="radio-inline" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </div>
+    </br>
+
+    <label id="transportation-type-label">Transportation Type:</label>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label>
+
+
+    <input type="submit" id="submit">
+</form>
+ <script type="text/javascript" src=https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
+</body>
+</html>
